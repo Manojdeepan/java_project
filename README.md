@@ -1,56 +1,53 @@
-Weather Prediction System (Java Project)
-Project Overview
+# Weather Prediction System (Java Project)
 
-This repository contains a desktop-based Java application that predicts and displays weather information for different cities. The system integrates the OpenWeatherMap API to fetch real-time weather data and uses a MySQL database to store search history. The application provides a simple and interactive Java Swing GUI for entering city names, viewing current weather conditions, and retrieving past search data.
+## Project Overview
+This repository contains a Java-based desktop application that predicts weather conditions using real-time data from the OpenWeatherMap API. The system allows users to enter a city name, fetch weather details, and view search history stored in a MySQL database. The application provides a Swing-based GUI for ease of use and demonstrates the integration of APIs with database storage.
 
-Key Features
+## Key Insights
+- **Real-Time Weather Data:** Fetches temperature, humidity, and wind speed for any entered city.  
+- **User Interface:** Swing-based GUI for input, results display, and interaction.  
+- **Database Integration:** MySQL used to store and retrieve search history.  
+- **Error Handling:** Handles invalid inputs, API failures, and connection issues.  
+- **Search History:** Maintains previous queries with weather details for reference.  
 
-Weather Data Retrieval: Fetches temperature, humidity, and wind speed using the OpenWeatherMap API.
+## Dashboard Preview
+### 1. Home Page  
+![Home Page](home_page.png)  
 
-Graphical User Interface: Built with Java Swing for an intuitive user experience.
+### 2. Entering a City  
+![Enter City](enter_city.png)  
 
-Search History Storage: Saves search history in a MySQL database with city name, date, and weather details.
+### 3. Fetching Weather  
+![Fetch Weather](fetch_weather.png)  
 
-Search History Retrieval: Displays past weather queries in a formatted dialog.
+### 4. Alert Message for Wrong City Name  
+![Error Message](error_message.png)  
 
-Error Handling: Handles invalid city inputs, failed API requests, and database connection issues.
+### 5. Search History  
+![Search History](search_history.png)  
 
-Dashboard Preview
+## Repository Contents
+- `WeatherForecastApp.java` – Java source code for the application.  
+- `home_page.png` – GUI screenshot (Home Page).  
+- `enter_city.png` – GUI screenshot (Enter City).  
+- `fetch_weather.png` – GUI screenshot (Fetch Weather).  
+- `error_message.png` – GUI screenshot (Error message for invalid city).  
+- `search_history.png` – GUI screenshot (Search History).  
+- `README.md` – Project documentation.  
 
-Repository Contents
+## Usage
+1. Clone or download this repository.  
+2. Set up a MySQL database and create the `search_history` table.  
+3. Add your **OpenWeatherMap API key** in the code.  
+4. Compile and run the program using **JDK 11** and your preferred IDE.  
 
-WeatherForecastApp.java – Main application code.
+## Tools and Technologies
+- Java (JDK 11)  
+- Swing (GUI)  
+- MySQL 5.7  
+- JDBC  
+- OpenWeatherMap API  
 
-search_history.sql – SQL script for creating the database table.
+---
 
-dashboard_screenshot.png – Screenshot of the application GUI
-
-README.md – Project documentation.
-
-Usage
-
-Clone or download this repository.
-
-Open the project in NetBeans or any Java IDE.
-
-Configure a MySQL database using the provided SQL schema.
-
-Add your OpenWeatherMap API key in the code.
-
-Run the project and fetch weather data.
-
-Tools and Technologies
-
-Java (JDK 11)
-
-Java Swing (GUI)
-
-MySQL 5.7
-
-JDBC (Database Connectivity)
-
-OpenWeatherMap API
-
-NetBeans IDE
-
-Author: Manoj Deepan M
+**Author:** Manoj Deepan M  
